@@ -5,6 +5,13 @@ export function fetchVanced() {
  fetch(vancedUrl, {
 }).then(res => {return res.json()})
 .then(data => {
+// console.log(data);
+ var lastUpdate = data[0].published_at;
+ var updateDate = new Date(lastUpdate);
+ $("#lastUpdateEl").html("Last update: "+ updateDate.toString());
+ 
+ 
+
  var ytName = data[0].assets[8].name;
  var ytMagisk = data[0].assets[8].browser_download_url;
  var ytLink = data[0].assets[9].browser_download_url;
