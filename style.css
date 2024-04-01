@@ -1,0 +1,106 @@
+@import url('./loader.css');
+
+:root {
+  --red: #FF4151;
+  --white: #FFE1E1;
+  --gray : #aaa;
+}
+.material-symbols-outlined {
+  transform: translateY(5px);
+  font-size: 24px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+div.loadingContainer {
+  z-index: 10;
+  position: fixed;
+  height: 100vh !important;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.scroll {
+  overflow-y: scroll;
+ /* scroll-snap-type: y andatory;
+  */
+}
+section {
+  height: 100vh !important;
+}
+.scroll section {
+  scroll-snap-align: start;
+}
+.footer {
+  height: fit-content !important;
+}
+a, a:hover, a:active, a:visited, a:focus {
+  color: var(--white);
+}
+.hero-title {
+  margin-top: 1em;
+}
+.btn {
+  transition: 0.5 linear;
+  width: 85%;
+  height: fit-content;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  border: #333 solid 1px;
+}
+.btn:hover {
+  background: var(--white);
+  color:var(--red);
+}
+button > div.version {
+  font-size: 12px;
+  font-weight: 300;
+}
+ .red {
+  color: var(--white);
+  background: var(--red);
+}
+ .white {
+  background: var(--white);
+  color: var(--red);
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  background: var(--red);
+}
+
+.modal {
+  transition: 0.3s linear !important;
+}
+
+.feature {
+  background:#495070;
+  width: 60%;
+  padding: 10px;
+  border-radius: 50px;
+}
+.kartuContainer {
+  display:flex;
+  justify-content: center;
+  height: fit-content;
+  padding: 1.5em;
+}
+div.kartu {
+  max-width: 95%;
+  height: auto;
+  background: #495070 !important;
+  padding: 2em 1em 2em 1em;
+}
+div.kartu > h1 {
+  padding-bottom: 20px;
+}
