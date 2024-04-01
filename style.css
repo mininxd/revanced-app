@@ -1,5 +1,7 @@
 @import url('./loader.css');
-
+html {
+-webkit-tap-highlight-color: transparent;
+}
 :root {
   --red: #FF4151;
   --white: #FFE1E1;
