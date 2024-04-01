@@ -1,6 +1,6 @@
 @import url('./loader.css');
 html {
--webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 :root {
   --red: #FF4151;
@@ -65,6 +65,15 @@ a, a:hover, a:active, a:visited, a:focus {
 button > div.version {
   font-size: 12px;
   font-weight: 300;
+}
+.bottom {
+  padding: 1em;
+  display: grid;
+  justify-content: center;
+}
+.bottom > button {
+  font-size: 14px;
+  width: fit-content;
 }
  .red {
   color: var(--white);
