@@ -1,4 +1,12 @@
 @import url('./loader.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+  font-optical-sizing: auto;
+}
+h1, p {
+  font-family: "DM Sans", sans-serif !important;
+}
 html {
   -webkit-tap-highlight-color: transparent;
 }
@@ -83,7 +91,10 @@ button > div.version {
   background: var(--white);
   color: var(--red);
 }
-
+.white:hover, .white:focus {
+  background: #444;
+  color: var(--white);
+}
 .line {
   width: 200px;
   height: 2px;
